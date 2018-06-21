@@ -28,7 +28,7 @@ fileprivate let defaultAnimationDuration = 0.3
 fileprivate let defaultIsEnabledWhileLoading = false
 
 @IBDesignable
-public class BrandedButton: UIControl {
+public class LGButton: UIControl {
     
     enum TouchAlphaValues : CGFloat {
         case touched = 0.7
