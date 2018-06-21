@@ -8,21 +8,46 @@
 import UIKit
 import QuartzCore
 
+fileprivate let defaultBackgroundColor = UIColor(red: 252.0, green: 182.0, blue: 90.0, alpha: 1.0)//UIColor(hex: "FCB65A") //252, 182, 90, 100
+fileprivate let defaultCornerRadius: CGFloat = 6.0
+fileprivate let defaultHasFullyRoundedCorners = false
+fileprivate let defaultBorderColor = UIColor.clear
+fileprivate let defaultBorderWidth: CGFloat = 0.0
+
+fileprivate let defaultTitleColor = UIColor.black
+fileprivate let defaultTitleFont = UIFont(name: "Futura-Bold", size: 20.0)
+fileprivate let defaultTitleString = "Continue"
+fileprivate let defaultLoadingString = "Loading"
+
+fileprivate let defaultShadowOffset = CGSize(width: 0.0, height: 5.0)
+fileprivate let defaultShadowRadius: CGFloat = 5.0
+fileprivate let defaultShadowOpacity: Float = 0.5
+fileprivate let defaultShadowColor = UIColor.black
+fileprivate let defaultLoadingSpinnerColor = UIColor.black
+fileprivate let defaultAnimationDuration = 0.3
+fileprivate let defaultIsEnabledWhileLoading = false
 
 @IBDesignable
-public class LGButton: UIControl {
+public class BrandedButton: UIControl {
     
     enum TouchAlphaValues : CGFloat {
         case touched = 0.7
         case untouched = 1.0
     }
-
+    
     let touchDisableRadius : CGFloat = 100.0
-
+    
     let availableFontIcons = ["fa", "io", "oc", "ic", "ma", "ti", "mi"]
+    
     
     var gradient : CAGradientLayer?
     
+    
+    override public var isEnabled:Bool{
+        didSet{
+            self.updateEnabledStyles()
+        }
+    }
     
     fileprivate var rootView : UIView!
     @IBOutlet fileprivate weak var titleLbl: UILabel!
@@ -53,14 +78,21 @@ public class LGButton: UIControl {
     
     public var isLoading = false {
         didSet {
-           showLoadingView()
+            showLoadingView()
         }
     }
+    
+    var isEnabledWhileLoading: Bool = defaultIsEnabledWhileLoading {
+        didSet{
+            setupView()
+        }
+    }
+    
     
     // MARK: - Inspectable properties
     // MARK:
     
-    @IBInspectable public var bgColor: UIColor = UIColor.gray {
+    @IBInspectable public var bgColor: UIColor = defaultBackgroundColor {
         didSet{
             setupView()
         }
@@ -100,41 +132,49 @@ public class LGButton: UIControl {
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable public var cornerRadius: CGFloat = defaultCornerRadius {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var fullyRoundedCorners: Bool = false {
+    @IBInspectable public var fullyRoundedCorners: Bool = defaultHasFullyRoundedCorners {
         didSet{
             setupBorderAndCorners()
         }
     }
     
-    @IBInspectable public var borderColor: UIColor = UIColor.white {
+    @IBInspectable public var borderColor: UIColor = defaultBorderColor {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable public var borderWidth: CGFloat = defaultBorderWidth {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var titleColor: UIColor = UIColor.white {
+    @IBInspectable public var titleColor: UIColor = defaultTitleColor {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var titleString: String = "" {
+    @IBInspectable public var titleString: String = defaultTitleString {
+        didSet{
+            setupView()
+            
+        }
+    }
+    
+    @IBInspectable public var titleFont: UIFont? = defaultTitleFont {
         didSet{
             setupView()
         }
     }
+    
     
     @IBInspectable public var titleFontName: String? {
         didSet{
@@ -280,49 +320,57 @@ public class LGButton: UIControl {
         }
     }
     
-    @IBInspectable public var shadowOffset: CGSize = CGSize.init(width:0, height:0) {
+    @IBInspectable public var shadowOffset: CGSize =  defaultShadowOffset {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var shadowRadius: CGFloat = 0 {
+    @IBInspectable public var shadowRadius: CGFloat = defaultShadowRadius {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var shadowOpacity: CGFloat = 1 {
+    @IBInspectable public var shadowOpacity: Float = defaultShadowOpacity {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var shadowColor: UIColor = UIColor.black {
+    
+    @IBInspectable public var shadowColor: UIColor = defaultShadowColor {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var loadingSpinnerColor: UIColor = UIColor.white {
+    @IBInspectable public var loadingSpinnerColor: UIColor = defaultLoadingSpinnerColor {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var loadingColor: UIColor = UIColor.white {
+    @IBInspectable public var loadingTitleColor: UIColor = defaultTitleColor.withAlphaComponent(0.8) {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var loadingString: String = "" {
+    @IBInspectable public var loadingString: String = defaultLoadingString {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable public var loadingFontName: String? {
+    
+    @IBInspectable public var loadingFont: UIFont? = defaultTitleFont{
+        didSet{
+            setupView()
+        }
+    }
+    
+    @IBInspectable public var loadingFontName: String? = nil{
         didSet{
             setupView()
         }
@@ -357,8 +405,33 @@ public class LGButton: UIControl {
         setupBorderAndCorners()
     }
     
+    
+    private func updateEnabledStyles() {
+        let enabled = self.isEnabled
+        if #available(iOS 10.0, *) {
+            let animator = UIViewPropertyAnimator(duration: 0.3, curve: .easeOut) {
+                self.alpha = enabled ? 1.0 : 0.5
+                self.layer.shadowOpacity = enabled ? Float(self.shadowOpacity) : 0.0
+            }
+            animator.startAnimation()
+            
+        } else {
+            // Fallback on earlier versions
+            self.alpha = enabled ? 1.0 : 0.5
+            self.layer.shadowOpacity = enabled ? Float(self.shadowOpacity) : 0.0
+        }
+    }
+    
+    
     override public var intrinsicContentSize: CGSize {
         return CGSize(width: 10, height: 10)
+    }
+    
+    
+    public func setAction(target:Any, action: Selector) {
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: target, action: action)
+        tapGesture.numberOfTapsRequired = 1
+        addGestureRecognizer(tapGesture)
     }
     
     // MARK: - Internal functions
@@ -395,10 +468,10 @@ public class LGButton: UIControl {
     }
     
     fileprivate func setupGradientBackground() {
-        if gradientStartColor != nil && gradientEndColor != nil && gradient == nil{
-            gradient = CAGradientLayer()
-            gradient!.frame.size = frame.size
-            gradient!.colors = [gradientStartColor!.cgColor, gradientEndColor!.cgColor]
+        if gradientStartColor != nil && gradientEndColor != nil{
+            gradient? = CAGradientLayer()
+            gradient?.frame.size = frame.size
+            gradient?.colors = [gradientStartColor!.cgColor, gradientEndColor!.cgColor]
             
             var rotation:CGFloat!
             if gradientRotation >= 0 {
@@ -414,9 +487,9 @@ public class LGButton: UIControl {
             let b = pow(sinf((2*Float(Double.pi)*((xAngle+0.0)/2))),2)
             let c = pow(sinf((2*Float(Double.pi)*((xAngle+0.25)/2))),2)
             let d = pow(sinf((2*Float(Double.pi)*((xAngle+0.5)/2))),2)
-            gradient!.startPoint = CGPoint(x: CGFloat(a), y: CGFloat(b))
-            gradient!.endPoint = CGPoint(x: CGFloat(c), y: CGFloat(d))
-        
+            gradient?.startPoint = CGPoint(x: CGFloat(a), y: CGFloat(b))
+            gradient?.endPoint = CGPoint(x: CGFloat(c), y: CGFloat(d))
+            
             bgContentView.layer.addSublayer(gradient!)
         }
     }
@@ -439,8 +512,8 @@ public class LGButton: UIControl {
         titleLbl.textColor = titleColor
         if titleFontName != nil {
             titleLbl.font = UIFont.init(name:titleFontName! , size:titleFontSize)
-        }else{
-            titleLbl.font = UIFont.systemFont(ofSize: titleFontSize)
+        }else if let font = titleFont{
+            titleLbl.font = font
         }
     }
     
@@ -493,20 +566,23 @@ public class LGButton: UIControl {
     }
     
     fileprivate func setupShadow(){
+        
         layer.shadowOffset = shadowOffset
         layer.shadowRadius = shadowRadius
-        layer.shadowOpacity = Float(shadowOpacity)
+        layer.shadowOpacity = isEnabled ? shadowOpacity : 0.0
         layer.shadowColor = shadowColor.cgColor
+        
     }
     
     fileprivate func setupLoadingView(){
+        loadingSpinner.activityIndicatorViewStyle = .whiteLarge
         loadingLabel.isHidden = loadingString.isEmpty
         loadingLabel.text = loadingString
-        loadingLabel.textColor = loadingColor
-        if loadingFontName != nil {
-            loadingLabel.font = UIFont.init(name:loadingFontName! , size:titleFontSize)
-        }else{
-            loadingLabel.font = UIFont.systemFont(ofSize: loadingFontSize)
+        loadingLabel.textColor = loadingTitleColor
+        if let fontString = loadingFontName, fontString != ""  {
+            loadingLabel.font = UIFont.init(name:fontString , size:titleFontSize)
+        }else if let font = loadingFont{
+            loadingLabel.font = font
         }
         loadingSpinner.color = loadingSpinnerColor
         setupBorderAndCorners()
@@ -569,11 +645,26 @@ public class LGButton: UIControl {
     }
     
     fileprivate func showLoadingView() {
+        
         leadingLoadingConstraint.isActive = isLoading
         trailingLoadingConstraint.isActive = isLoading
         mainStackView.isHidden = isLoading
         loadingStackView.isHidden = !isLoading
-        isUserInteractionEnabled = !isLoading
+        isUserInteractionEnabled = isEnabledWhileLoading || !isLoading
+        if #available(iOS 10.0, *) {
+            let animator = UIViewPropertyAnimator.init(duration: 0.5, curve: .easeInOut, animations: {
+                self.loadingStackView.alpha = self.loadingStackView.alpha == 1.0 ? 0.5 : 1.0
+            })
+            animator.addCompletion { (pos) in
+                animator.startAnimation()
+            }
+            
+            animator.startAnimation()
+            
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
     
     // MARK: - Xib file
@@ -613,7 +704,7 @@ public class LGButton: UIControl {
             touchAlpha = (pressed) ? .touched : .untouched
         }
     }
-
+    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         pressed = true
     }
@@ -622,6 +713,7 @@ public class LGButton: UIControl {
         let shouldSendActions = pressed
         pressed = false
         if shouldSendActions{
+            sendActions(for: .allEvents)
             sendActions(for: .touchUpInside)
         }
     }
@@ -646,7 +738,7 @@ public class LGButton: UIControl {
     
     func updateTouchAlpha() {
         if self.alpha != self.touchAlpha.rawValue {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: defaultAnimationDuration) {
                 self.alpha = self.touchAlpha.rawValue
             }
         }
