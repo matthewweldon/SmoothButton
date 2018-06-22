@@ -1,8 +1,10 @@
 //
-//  LGButton.swift
-//  LGButtonDemo
+//  SmoothButton.swift
 //
-//  Created by Lorenzo Greco on 28/05/2017.
+//
+//  Created by Rush and Matt on 28/05/2017.
+//
+//  Based on LG Button by Lorenzo Greco
 //  Copyright © 2017 Lorenzo Greco. All rights reserved.
 //
 import UIKit
@@ -16,7 +18,7 @@ fileprivate let defaultBorderWidth: CGFloat = 0.0
 
 fileprivate let defaultTitleColor = UIColor.black
 fileprivate let defaultTitleFont = UIFont(name: "Futura-Bold", size: 20.0)
-fileprivate let defaultTitleString = "Continue"
+fileprivate let defaultTitleString = "Button"
 fileprivate let defaultLoadingString = "Loading"
 
 fileprivate let defaultShadowOffset = CGSize(width: 0.0, height: 5.0)
@@ -27,8 +29,9 @@ fileprivate let defaultLoadingSpinnerColor = UIColor.black
 fileprivate let defaultAnimationDuration = 0.3
 fileprivate let defaultIsEnabledWhileLoading = false
 
+
 @IBDesignable
-public class LGButton: UIControl {
+public class SmoothButton: UIControl {
     
     enum TouchAlphaValues : CGFloat {
         case touched = 0.7
@@ -45,9 +48,21 @@ public class LGButton: UIControl {
     
     override public var isEnabled:Bool{
         didSet{
-            self.updateEnabledStyles()
+            if(oldValue != isEnabled){
+                self.updateEnabledStyles()
+            }
         }
     }
+    
+    
+    static func slowAnimationsConstant()->Float{
+        #if TARGET_IPHONE_SIMULATOR
+        return UIAnimationDragCoefficient();
+        #else
+        return 1.0;
+        #endif
+    }
+    
     
     fileprivate var rootView : UIView!
     @IBOutlet fileprivate weak var titleLbl: UILabel!
@@ -407,19 +422,49 @@ public class LGButton: UIControl {
     
     
     private func updateEnabledStyles() {
+        self.layer.removeAllAnimations()
+        
         let enabled = self.isEnabled
-        if #available(iOS 10.0, *) {
-            let animator = UIViewPropertyAnimator(duration: 0.3, curve: .easeOut) {
-                self.alpha = enabled ? 1.0 : 0.5
-                self.layer.shadowOpacity = enabled ? Float(self.shadowOpacity) : 0.0
-            }
-            animator.startAnimation()
-            
-        } else {
-            // Fallback on earlier versions
-            self.alpha = enabled ? 1.0 : 0.5
-            self.layer.shadowOpacity = enabled ? Float(self.shadowOpacity) : 0.0
-        }
+        
+        let shadowOpacityToValue:Float = enabled ? self.shadowOpacity : 0.0
+        let shadowOpacityFromValue:Float = enabled ? 0.0 : self.shadowOpacity
+        
+        let opacityToValue:Float = enabled ? 1.0 : 0.5
+        let opacityFromValue:Float  = enabled ?  0.5 : 1
+        
+        let shadowRadiusFromValue: CGFloat = enabled ?   0.0 : self.shadowRadius
+        let shadowRadiusToValue:CGFloat = enabled ? self.shadowRadius : 0.0
+        
+        let duration:Double = Double(0.3 * SmoothButton.slowAnimationsConstant())
+        
+        
+        let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
+        shadowAnimation.fillMode = kCAFillModeForwards
+        shadowAnimation.isRemovedOnCompletion = false
+        shadowAnimation.fromValue = shadowOpacityFromValue
+        shadowAnimation.toValue = shadowOpacityToValue
+        shadowAnimation.duration = duration
+        
+        let shadowRadiusAnimation = CABasicAnimation(keyPath: "shadowRadius")
+        shadowRadiusAnimation.fillMode = kCAFillModeForwards
+        shadowRadiusAnimation.isRemovedOnCompletion = false
+        shadowRadiusAnimation.fromValue = shadowRadiusFromValue
+        shadowRadiusAnimation.toValue = shadowRadiusToValue
+        shadowRadiusAnimation.duration = duration
+        
+        let alphaAnimation = CABasicAnimation(keyPath: "opacity")
+        alphaAnimation.fillMode = kCAFillModeForwards
+        alphaAnimation.isRemovedOnCompletion = false
+        alphaAnimation.fromValue = opacityFromValue
+        alphaAnimation.toValue = opacityToValue
+        alphaAnimation.duration = duration
+        
+        self.layer.shadowOpacity = shadowOpacityToValue
+        self.layer.shadowRadius = shadowRadiusToValue
+        self.layer.opacity = opacityToValue
+        self.layer.add(shadowAnimation, forKey: "shadowOpacity")
+        self.layer.add(shadowRadiusAnimation, forKey: "shadowRadius")
+        self.layer.add(alphaAnimation, forKey: "opacity")
     }
     
     
@@ -439,6 +484,7 @@ public class LGButton: UIControl {
     
     // Setup the view appearance
     fileprivate func setupView(){
+        
         bgContentView.clipsToBounds = true
         layer.masksToBounds = false
         setIconOrientation()
@@ -467,31 +513,31 @@ public class LGButton: UIControl {
         bgContentView.backgroundColor = bgColor
     }
     
-    fileprivate func setupGradientBackground() {
-        if gradientStartColor != nil && gradientEndColor != nil{
-            gradient? = CAGradientLayer()
-            gradient?.frame.size = frame.size
-            gradient?.colors = [gradientStartColor!.cgColor, gradientEndColor!.cgColor]
-            
-            var rotation:CGFloat!
-            if gradientRotation >= 0 {
-                rotation = min(gradientRotation, CGFloat(360.0))
-            } else {
-                rotation = max(gradientRotation, CGFloat(-360.0))
+        fileprivate func setupGradientBackground() {
+            if gradientStartColor != nil && gradientEndColor != nil && gradient == nil{
+                gradient = CAGradientLayer()
+                gradient!.frame.size = frame.size
+                gradient!.colors = [gradientStartColor!.cgColor, gradientEndColor!.cgColor]
+                
+                var rotation:CGFloat!
+                if gradientRotation >= 0 {
+                    rotation = min(gradientRotation, CGFloat(360.0))
+                } else {
+                    rotation = max(gradientRotation, CGFloat(-360.0))
+                }
+                var xAngle:Float = Float(rotation/360)
+                if (gradientHorizontal) {
+                    xAngle = 0.25
+                }
+                let a = pow(sinf((2*Float(Double.pi)*((xAngle+0.75)/2))),2)
+                let b = pow(sinf((2*Float(Double.pi)*((xAngle+0.0)/2))),2)
+                let c = pow(sinf((2*Float(Double.pi)*((xAngle+0.25)/2))),2)
+                let d = pow(sinf((2*Float(Double.pi)*((xAngle+0.5)/2))),2)
+                gradient!.startPoint = CGPoint(x: CGFloat(a), y: CGFloat(b))
+                gradient!.endPoint = CGPoint(x: CGFloat(c), y: CGFloat(d))
+                
+                bgContentView.layer.addSublayer(gradient!)
             }
-            var xAngle:Float = Float(rotation/360)
-            if (gradientHorizontal) {
-                xAngle = 0.25
-            }
-            let a = pow(sinf((2*Float(Double.pi)*((xAngle+0.75)/2))),2)
-            let b = pow(sinf((2*Float(Double.pi)*((xAngle+0.0)/2))),2)
-            let c = pow(sinf((2*Float(Double.pi)*((xAngle+0.25)/2))),2)
-            let d = pow(sinf((2*Float(Double.pi)*((xAngle+0.5)/2))),2)
-            gradient?.startPoint = CGPoint(x: CGFloat(a), y: CGFloat(b))
-            gradient?.endPoint = CGPoint(x: CGFloat(c), y: CGFloat(d))
-            
-            bgContentView.layer.addSublayer(gradient!)
-        }
     }
     
     fileprivate func setupBorderAndCorners() {
@@ -651,20 +697,18 @@ public class LGButton: UIControl {
         mainStackView.isHidden = isLoading
         loadingStackView.isHidden = !isLoading
         isUserInteractionEnabled = isEnabledWhileLoading || !isLoading
-        if #available(iOS 10.0, *) {
-            let animator = UIViewPropertyAnimator.init(duration: 0.5, curve: .easeInOut, animations: {
-                self.loadingStackView.alpha = self.loadingStackView.alpha == 1.0 ? 0.5 : 1.0
-            })
-            animator.addCompletion { (pos) in
-                animator.startAnimation()
-            }
-            
-            animator.startAnimation()
-            
-        } else {
-            // Fallback on earlier versions
-        }
         
+        
+        let animation =      CABasicAnimation(keyPath: "opacity")
+        animation.fillMode = kCAFillModeForwards
+        animation.isRemovedOnCompletion = false
+        animation.toValue = 0.5
+        animation.fromValue = 1.0
+        animation.autoreverses = true
+        animation.repeatCount = .infinity
+        animation.repeatDuration = .infinity
+        animation.duration = Double(1.0 * SmoothButton.slowAnimationsConstant())
+        self.loadingStackView.layer.add(animation, forKey: "opacity")
     }
     
     // MARK: - Xib file
@@ -681,7 +725,7 @@ public class LGButton: UIControl {
     fileprivate func loadViewFromNib() -> UIView {
         
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "LGButton", bundle: bundle)
+        let nib = UINib(nibName: "SmoothButton", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
@@ -743,4 +787,6 @@ public class LGButton: UIControl {
             }
         }
     }
+    
+    
 }

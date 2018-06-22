@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double LGButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char LGButtonVersionString[];
+FOUNDATION_EXPORT double SmoothButtonVersionNumber;
+FOUNDATION_EXPORT const unsigned char SmoothButtonVersionString[];
 

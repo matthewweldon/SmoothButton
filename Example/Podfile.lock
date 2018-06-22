@@ -1,16 +1,16 @@
 PODS:
-  - LGButton (1.0.4)
+  - SmoothButton (1.0.0)
 
 DEPENDENCIES:
-  - LGButton (from `../`)
+  - SmoothButton (from `../`)
 
 EXTERNAL SOURCES:
-  LGButton:
-    :path: ../
+  SmoothButton:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  LGButton: 18e95e29f4c8738fcab088f35c7b861d6e797e8b
+  SmoothButton: 3bb74ab445e66afaf4f9a9b45636b640df70b61f
 
-PODFILE CHECKSUM: 448b2d5ebb3f7a98ab2e34cf948f1d44062399e6
+PODFILE CHECKSUM: ea06917648852c9ebabd7ab38b5e853c77e1a5c2
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

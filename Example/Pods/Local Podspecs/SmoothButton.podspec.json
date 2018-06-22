@@ -1,0 +1,22 @@
+{
+  "name": "SmoothButton",
+  "version": "1.0.0",
+  "summary": "A custom button based on LGButton pod subclass of the native",
+  "homepage": "https://cocoapods.org/pods/SmoothButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "rush b & matt": "rush@smooth.tech"
+  },
+  "source": {
+    "git": "https://github.com/rushanb/LGButton.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SmoothButton/Classes/**/*.{swift}",
+  "resources": "SmoothButton/Resources/*"
+}

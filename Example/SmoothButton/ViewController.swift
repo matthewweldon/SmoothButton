@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import LGButton
+import SmoothButton
 
 class ViewController: UIViewController {
 
 
-    @IBAction func action(_ sender: LGButton) {
+    @IBAction func action(_ sender: SmoothButton) {
         sender.isLoading = true
         let deadlineTime = DispatchTime.now() + .seconds(3)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime) {

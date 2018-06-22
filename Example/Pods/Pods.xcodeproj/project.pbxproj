@@ -7,140 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0111B59DCCC9EAACB92593A022F3838B /* ThemifyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BE8E3299FACA76670C543371D73C4 /* ThemifyIcon.swift */; };
-		02E376A3BB1FBA1BCD8E98C70C180AED /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08802B113FD67EC18F134F83FD56CF7 /* map-icons.ttf */; };
-		0FBE4FF135F6B225918CDF1183366FCC /* Pods-LGButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5742C4865D28386BBC6726126293F /* Pods-LGButton_Example-dummy.m */; };
-		133C2817BB2989540DBD3B5532CDA8C3 /* LGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE1CA76F357A2BE5F2CFFB8CEA4453 /* LGButton.swift */; };
-		1EA43895FFFA8B57AE7DA63863BC50B0 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E14CA0E5062DF7326294A094552D6 /* Ionicons.ttf */; };
-		39EE9FFD385AD53400B26BB45B63E61C /* Octicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEFD53D6D7718327A189DF7C4294E81 /* Octicon.swift */; };
-		4001DEBAD80025CFFADC02F608DE4663 /* Pods-LGButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB9CB8AF1B9D0F8FD596B8CDC849F74 /* Pods-LGButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5159D59724BDD166CCB121F1689345C8 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AFFDCB71DAFDD5DC5204D7CF18E5CAC /* MaterialIcons-Regular.ttf */; };
-		5A25E453199C12C4FA9301DF2D389ED7 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED320CE468793386B41961CD681644 /* FontAwesome.swift */; };
-		63942684986A6021EBA8ABC92D1BED5A /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C6F23C11E86A1FCDF1B1957A3DCCA /* MapIcon.swift */; };
-		7C09D74788B3D10DCF42597D80E14252 /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE0981E747F5451D44457B69A95461 /* open-iconic.ttf */; };
-		9017EB99C6AF6C8CECD651DF68A1576A /* LGButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC93E13272EFE886024A07D499B0036 /* LGButton.xib */; };
-		961B556D81601BD99546C99765C47FD3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70E9CD9D1FAD5A8D6E05361A54D47173 /* FontAwesome.ttf */; };
-		9BFA2AC933652C807A2F3557488F0CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A326FA53681BD593E5B23B000EDF91EA /* SwiftIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAFAEA69254A07EA85215C89E0EC9F /* SwiftIconLabel.swift */; };
-		A3F98EB4A538FB4BEAC032AD07A6E758 /* SwiftIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71642743B0A60B7FC94D05EA3D5F7CF4 /* SwiftIconFont.swift */; };
-		AF198558F21676A1C2320D98AEA9FC52 /* themify.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D855F5D626F14AF3B8D975216210DD85 /* themify.ttf */; };
-		B5C3F5FF48CE89026E790D0E1CBB9C38 /* IonIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293EABEC57BB07F4C367D06196604BAA /* IonIcons.swift */; };
-		B85E3C54B4A1AD46BCEAB18A455C5F67 /* MaterialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47475A01EB2C02955C49B9F06645E1C /* MaterialIcon.swift */; };
-		C587927E25053282F18B343438BEBCCC /* LGButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B5A28AE1AB321C8DB11F31233C997F /* LGButton-dummy.m */; };
-		E5F63C7D3706848E119DBDDBB68F2558 /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D4A25C3BB0BA04D57081744878EC8 /* FontLoader.swift */; };
-		E6F97DD0F1D6B01260C575B507E45A15 /* Iconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195CF323A8E487831CEA3FE4B8349085 /* Iconic.swift */; };
-		E81B107B06C1AC312AA7636B1E1301DE /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C45E4EB3D7ABE0CB25A622B08A1 /* octicons.ttf */; };
-		F4AE204EAEB3B526F04157A32888A1B4 /* LGButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F141D433D5061DDBE056864765F8074A /* LGButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB2289B023002E1D6951678345C0D983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0435520C6749C474F215E59186FD840F /* IonIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC90A41EB823791FABA92348EA092B0 /* IonIcons.swift */; };
+		15C1A661FB2D775B2A52C8D347F7EF86 /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD546B370C69DC5F816E34348958CA7 /* FontLoader.swift */; };
+		1A3632246A17EE4A81414A9346DD6695 /* SwiftIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA773BB1B33BE900D27F38A603EA1CF2 /* SwiftIconFont.swift */; };
+		1B8E741B3F20234C1DDC6ADEA59A2DE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3A0657416E489DD89B83DE71718A8159 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649CB12B10B0C4B8E3E80B4E2C8AC1B /* FontAwesome.swift */; };
+		4204A36FA222CC8021CD9360E3E6F7A7 /* Iconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E4B6DB4E519F4387FBF1A5712F1E9D /* Iconic.swift */; };
+		433E179584B0EA3BF7AC464E3D0B09DC /* themify.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D64767784526F28683253957E048B0 /* themify.ttf */; };
+		4C5450786C93936EDB5FFA3913B28C00 /* MaterialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED6A51F47D08C7A937BF14E1311EBF /* MaterialIcon.swift */; };
+		4C97833C22E4EDFA1FD0F67300853831 /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D29D84F07DDE22A1FA5CF533C57217 /* MapIcon.swift */; };
+		59AE6D1B99E7E61FE792464150720AEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		67C71405A9ACDC38DBE5525C3CC77B34 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A55B5E57126BF288677D8AFBA06A /* Ionicons.ttf */; };
+		6C5512F13F02B747FA78B48CBB8942B2 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FAE130354FF0545006D71FBF73C1F03 /* MaterialIcons-Regular.ttf */; };
+		6CE94436C4F5C37506E993D6E9DDAAE2 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE0573A16AD6FAF0BB39DD4E4D654F27 /* FontAwesome.ttf */; };
+		70C9C23A7F0B6D71AEB801B29AA4BD41 /* SwiftIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CA0D01C4E78A1560E5A26AF2FA961 /* SwiftIconLabel.swift */; };
+		72C419D0FA56428F64277778AFC7784D /* Octicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209216CB2D5E5A4945E176666B50158 /* Octicon.swift */; };
+		8360348CCD65B97485262C9A9DB983DE /* SmoothButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CFDD88F0494AC7152D8C6D48E69DFA /* SmoothButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89171EA571B22E2C6006686854F20BFF /* Pods-LGButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1EB5F98997383AAB716452B8C97742 /* Pods-LGButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9126904FD0E1EDD922EFEF0DF2E366C1 /* SmoothButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0B4787A57F6CC5D2759CC2E640FC85 /* SmoothButton-dummy.m */; };
+		A9E4B53A31632581A7876D29C7F10403 /* SmoothButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B2D7646051516B9B5A3EE3CC166D /* SmoothButton.swift */; };
+		B2EE87BC4BFE1CE590B185F387D55D6D /* Pods-LGButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9AB42BA54D0CA8E2458E8ED8FAB5C /* Pods-LGButton_Example-dummy.m */; };
+		C4949458E9D2EB1F9DF1E29414535665 /* ThemifyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF18838C8F08214A1AE0CB8375C4BD3 /* ThemifyIcon.swift */; };
+		D511068FAFFB6293291DB4BBD75B9145 /* SmoothButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2B4BC0B1049FC960E23A245E1628CF /* SmoothButton.xib */; };
+		E866C5ACF71A1CDA433AD1C9BA54603B /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB7475C07238C4F80F055A31B51B29E3 /* map-icons.ttf */; };
+		E883412A55129508B8D64C51E9A7941D /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B538F730A3925EC23E89883692AB11E4 /* octicons.ttf */; };
+		FFBEF27D7B833222863C166AFD338367 /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F25375CB3EBDBD48F791840FE25B926 /* open-iconic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1CE4507C9F8B1C7DE59AACEEBEF4692 /* PBXContainerItemProxy */ = {
+		A0BC4FDB988BB70652F762632A1A51E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DCB2B03C26F284864226302AFAEC546C;
-			remoteInfo = LGButton;
+			remoteGlobalIDString = 80E80B7A9D1EF46DE3D055343FA37FCC;
+			remoteInfo = SmoothButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02EDF022546D31304595FC764AA9EBAB /* LGButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGButton.xcconfig; sourceTree = "<group>"; };
-		07B5A28AE1AB321C8DB11F31233C997F /* LGButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGButton-dummy.m"; sourceTree = "<group>"; };
-		0CCE1CA76F357A2BE5F2CFFB8CEA4453 /* LGButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LGButton.swift; path = LGButton/Classes/LGButton.swift; sourceTree = "<group>"; };
-		121146EFC3ADA2D6DDB75E7F492ED7EF /* LGButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LGButton.framework; path = LGButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		195CF323A8E487831CEA3FE4B8349085 /* Iconic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Iconic.swift; sourceTree = "<group>"; };
-		293EABEC57BB07F4C367D06196604BAA /* IonIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IonIcons.swift; sourceTree = "<group>"; };
-		2AFFDCB71DAFDD5DC5204D7CF18E5CAC /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "LGButton/Resources/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
-		4C3E14CA0E5062DF7326294A094552D6 /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = LGButton/Resources/Ionicons.ttf; sourceTree = "<group>"; };
-		4CFE0981E747F5451D44457B69A95461 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "LGButton/Resources/open-iconic.ttf"; sourceTree = "<group>"; };
-		4DED320CE468793386B41961CD681644 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
-		4E8D4A25C3BB0BA04D57081744878EC8 /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontLoader.swift; sourceTree = "<group>"; };
-		58109B1421C9A7A37D20C75DA9B8CC32 /* Pods_LGButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGButton_Example.framework; path = "Pods-LGButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59B5D472E9025E1F0B6CA7D43899F55E /* Pods-LGButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		05DC8D1A1B544307522E31F2ABF3A3AD /* Pods-LGButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		09CFDD88F0494AC7152D8C6D48E69DFA /* SmoothButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothButton-umbrella.h"; sourceTree = "<group>"; };
+		11960EE14BE3BCBB9D4FD8B79F411508 /* Pods-LGButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		185174DCF336949C789FFBDADFC32EF5 /* SmoothButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmoothButton.framework; path = SmoothButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		286E707C8F400C7D677D143B253506AE /* Pods-LGButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		33D64767784526F28683253957E048B0 /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = SmoothButton/Resources/themify.ttf; sourceTree = "<group>"; };
+		45DB3876CB623F84DC37318275DD9C5F /* Pods-LGButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		468394DBCA6E3365222BC638A99A7A8B /* SmoothButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmoothButton.modulemap; sourceTree = "<group>"; };
+		4879D6A4E681419B7A5B1FD330967A01 /* SmoothButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmoothButton.xcconfig; sourceTree = "<group>"; };
+		4C58D8D3D8F32EE672E024A549D21261 /* Pods-LGButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGButton_Example-resources.sh"; sourceTree = "<group>"; };
+		4CED6A51F47D08C7A937BF14E1311EBF /* MaterialIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaterialIcon.swift; sourceTree = "<group>"; };
+		4DC90A41EB823791FABA92348EA092B0 /* IonIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IonIcons.swift; sourceTree = "<group>"; };
+		5649CB12B10B0C4B8E3E80B4E2C8AC1B /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		5A200DC22B7F743F5D87221FA340A494 /* SmoothButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SmoothButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C2B4BC0B1049FC960E23A245E1628CF /* SmoothButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmoothButton.xib; path = SmoothButton/Resources/SmoothButton.xib; sourceTree = "<group>"; };
+		60D29D84F07DDE22A1FA5CF533C57217 /* MapIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66A97A9FC2E2FC13A62332924AC1B9A3 /* LGButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGButton-prefix.pch"; sourceTree = "<group>"; };
-		70E9CD9D1FAD5A8D6E05361A54D47173 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = LGButton/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
-		71642743B0A60B7FC94D05EA3D5F7CF4 /* SwiftIconFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftIconFont.swift; sourceTree = "<group>"; };
-		7744F556506528A690A2C7F2E97AC852 /* Pods-LGButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		808C6F23C11E86A1FCDF1B1957A3DCCA /* MapIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
-		8DA92659A97D35DBAD78B49C364D8841 /* LGButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LGButton.modulemap; sourceTree = "<group>"; };
+		6E1EB5F98997383AAB716452B8C97742 /* Pods-LGButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		6FAE130354FF0545006D71FBF73C1F03 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "SmoothButton/Resources/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		709CA0D01C4E78A1560E5A26AF2FA961 /* SwiftIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftIconLabel.swift; sourceTree = "<group>"; };
+		7209216CB2D5E5A4945E176666B50158 /* Octicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Octicon.swift; sourceTree = "<group>"; };
+		72263B28D0CF2BA1FA649E46433D1C1F /* Pods-LGButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGButton_Example.modulemap"; sourceTree = "<group>"; };
+		74E6200EE1EC492BD19C5DC8E71D9372 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4CCEF94BF48DBA8A4E1A59BC398EBE /* Pods-LGButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CB9AB42BA54D0CA8E2458E8ED8FAB5C /* Pods-LGButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGButton_Example-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9473015A3175631C2E52D2D1F9DE57A8 /* Pods-LGButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AC3F3C45E4EB3D7ABE0CB25A622B08A1 /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = LGButton/Resources/octicons.ttf; sourceTree = "<group>"; };
-		C06B66404DEACFB865299CF0031CA27D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C08802B113FD67EC18F134F83FD56CF7 /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "LGButton/Resources/map-icons.ttf"; sourceTree = "<group>"; };
-		C47475A01EB2C02955C49B9F06645E1C /* MaterialIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaterialIcon.swift; sourceTree = "<group>"; };
-		CBC93E13272EFE886024A07D499B0036 /* LGButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LGButton.xib; path = LGButton/Resources/LGButton.xib; sourceTree = "<group>"; };
-		CCE5742C4865D28386BBC6726126293F /* Pods-LGButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGButton_Example-dummy.m"; sourceTree = "<group>"; };
-		CE2BE8E3299FACA76670C543371D73C4 /* ThemifyIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemifyIcon.swift; sourceTree = "<group>"; };
-		D16729AF393252BDF8C879F04B8A8B98 /* Pods-LGButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D603FBC8499F06867120C7FF16DC35FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D855F5D626F14AF3B8D975216210DD85 /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = LGButton/Resources/themify.ttf; sourceTree = "<group>"; };
-		DEB9CB8AF1B9D0F8FD596B8CDC849F74 /* Pods-LGButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		DEEFD53D6D7718327A189DF7C4294E81 /* Octicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Octicon.swift; sourceTree = "<group>"; };
-		E338AF219D9DAEB4F16039D2D71BDE3E /* Pods-LGButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EAAAFAEA69254A07EA85215C89E0EC9F /* SwiftIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftIconLabel.swift; sourceTree = "<group>"; };
-		F141D433D5061DDBE056864765F8074A /* LGButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGButton-umbrella.h"; sourceTree = "<group>"; };
-		FAA670EBA3B1E072C9F7C24657F56B4F /* Pods-LGButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LGButton_Example.modulemap"; sourceTree = "<group>"; };
-		FEBC577135FB70C8951F764C5BBED649 /* Pods-LGButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGButton_Example-resources.sh"; sourceTree = "<group>"; };
+		9815FF46D961CCED91DB9DCEECC7CA9E /* SmoothButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothButton-prefix.pch"; sourceTree = "<group>"; };
+		9F25375CB3EBDBD48F791840FE25B926 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "SmoothButton/Resources/open-iconic.ttf"; sourceTree = "<group>"; };
+		AC0B4787A57F6CC5D2759CC2E640FC85 /* SmoothButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmoothButton-dummy.m"; sourceTree = "<group>"; };
+		B538F730A3925EC23E89883692AB11E4 /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = SmoothButton/Resources/octicons.ttf; sourceTree = "<group>"; };
+		BDF18838C8F08214A1AE0CB8375C4BD3 /* ThemifyIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemifyIcon.swift; sourceTree = "<group>"; };
+		CB7475C07238C4F80F055A31B51B29E3 /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "SmoothButton/Resources/map-icons.ttf"; sourceTree = "<group>"; };
+		CFF4A55B5E57126BF288677D8AFBA06A /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = SmoothButton/Resources/Ionicons.ttf; sourceTree = "<group>"; };
+		E30748A1FE9351FEA12AA683E9D861BA /* Pods_LGButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGButton_Example.framework; path = "Pods-LGButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E4B6DB4E519F4387FBF1A5712F1E9D /* Iconic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Iconic.swift; sourceTree = "<group>"; };
+		F3F8FD35025ABE0E3F1251014EEC3EB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C1B2D7646051516B9B5A3EE3CC166D /* SmoothButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothButton.swift; path = SmoothButton/Classes/SmoothButton.swift; sourceTree = "<group>"; };
+		FA773BB1B33BE900D27F38A603EA1CF2 /* SwiftIconFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftIconFont.swift; sourceTree = "<group>"; };
+		FBD546B370C69DC5F816E34348958CA7 /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontLoader.swift; sourceTree = "<group>"; };
+		FE0573A16AD6FAF0BB39DD4E4D654F27 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = SmoothButton/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B3265FFF4D9638330D2D680805F33E7 /* Frameworks */ = {
+		1FF1E767F04675C8196ABE41763272EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BFA2AC933652C807A2F3557488F0CBA /* Foundation.framework in Frameworks */,
+				59AE6D1B99E7E61FE792464150720AEB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33D308CE8EF1EF37F920ECFAA9279D29 /* Frameworks */ = {
+		8944EB5084DEEDC3A45B7BFB161AEC78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2289B023002E1D6951678345C0D983 /* Foundation.framework in Frameworks */,
+				1B8E741B3F20234C1DDC6ADEA59A2DE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A3FBE3750BEC94CDDA385907F93CFD4 /* Pods-LGButton_Example */ = {
+		1317D197ABB84CF4803D96CD02FF78E8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C06B66404DEACFB865299CF0031CA27D /* Info.plist */,
-				FAA670EBA3B1E072C9F7C24657F56B4F /* Pods-LGButton_Example.modulemap */,
-				9473015A3175631C2E52D2D1F9DE57A8 /* Pods-LGButton_Example-acknowledgements.markdown */,
-				7744F556506528A690A2C7F2E97AC852 /* Pods-LGButton_Example-acknowledgements.plist */,
-				CCE5742C4865D28386BBC6726126293F /* Pods-LGButton_Example-dummy.m */,
-				D16729AF393252BDF8C879F04B8A8B98 /* Pods-LGButton_Example-frameworks.sh */,
-				FEBC577135FB70C8951F764C5BBED649 /* Pods-LGButton_Example-resources.sh */,
-				DEB9CB8AF1B9D0F8FD596B8CDC849F74 /* Pods-LGButton_Example-umbrella.h */,
-				59B5D472E9025E1F0B6CA7D43899F55E /* Pods-LGButton_Example.debug.xcconfig */,
-				E338AF219D9DAEB4F16039D2D71BDE3E /* Pods-LGButton_Example.release.xcconfig */,
+				F3F8FD35025ABE0E3F1251014EEC3EB1 /* Info.plist */,
+				468394DBCA6E3365222BC638A99A7A8B /* SmoothButton.modulemap */,
+				4879D6A4E681419B7A5B1FD330967A01 /* SmoothButton.xcconfig */,
+				AC0B4787A57F6CC5D2759CC2E640FC85 /* SmoothButton-dummy.m */,
+				9815FF46D961CCED91DB9DCEECC7CA9E /* SmoothButton-prefix.pch */,
+				09CFDD88F0494AC7152D8C6D48E69DFA /* SmoothButton-umbrella.h */,
 			);
-			name = "Pods-LGButton_Example";
-			path = "Target Support Files/Pods-LGButton_Example";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SmoothButton";
 			sourceTree = "<group>";
 		};
 		13A58A21898FA2D8E8FA72017B475DE3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A3FBE3750BEC94CDDA385907F93CFD4 /* Pods-LGButton_Example */,
+				339D37DAC0B7C908AB9B7A49DE00A9DF /* Pods-LGButton_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4F3953A3B24A24374144C1C5B7F86BF0 /* LGButton */ = {
+		339D37DAC0B7C908AB9B7A49DE00A9DF /* Pods-LGButton_Example */ = {
 			isa = PBXGroup;
 			children = (
-				0CCE1CA76F357A2BE5F2CFFB8CEA4453 /* LGButton.swift */,
-				C9EA44F079D1B30C75603242A229A8A8 /* Resources */,
-				C8DBFA1F0EC5016D21E92F2F11863B83 /* Support Files */,
-				839615235E231E5FE1EDDC16061990B7 /* SwiftIconFont */,
+				74E6200EE1EC492BD19C5DC8E71D9372 /* Info.plist */,
+				72263B28D0CF2BA1FA649E46433D1C1F /* Pods-LGButton_Example.modulemap */,
+				11960EE14BE3BCBB9D4FD8B79F411508 /* Pods-LGButton_Example-acknowledgements.markdown */,
+				7B4CCEF94BF48DBA8A4E1A59BC398EBE /* Pods-LGButton_Example-acknowledgements.plist */,
+				7CB9AB42BA54D0CA8E2458E8ED8FAB5C /* Pods-LGButton_Example-dummy.m */,
+				45DB3876CB623F84DC37318275DD9C5F /* Pods-LGButton_Example-frameworks.sh */,
+				4C58D8D3D8F32EE672E024A549D21261 /* Pods-LGButton_Example-resources.sh */,
+				6E1EB5F98997383AAB716452B8C97742 /* Pods-LGButton_Example-umbrella.h */,
+				05DC8D1A1B544307522E31F2ABF3A3AD /* Pods-LGButton_Example.debug.xcconfig */,
+				286E707C8F400C7D677D143B253506AE /* Pods-LGButton_Example.release.xcconfig */,
 			);
-			name = LGButton;
+			name = "Pods-LGButton_Example";
+			path = "Target Support Files/Pods-LGButton_Example";
+			sourceTree = "<group>";
+		};
+		442F542F9283B9651F80ACFC8005678B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE0573A16AD6FAF0BB39DD4E4D654F27 /* FontAwesome.ttf */,
+				CFF4A55B5E57126BF288677D8AFBA06A /* Ionicons.ttf */,
+				CB7475C07238C4F80F055A31B51B29E3 /* map-icons.ttf */,
+				6FAE130354FF0545006D71FBF73C1F03 /* MaterialIcons-Regular.ttf */,
+				B538F730A3925EC23E89883692AB11E4 /* octicons.ttf */,
+				9F25375CB3EBDBD48F791840FE25B926 /* open-iconic.ttf */,
+				5C2B4BC0B1049FC960E23A245E1628CF /* SmoothButton.xib */,
+				33D64767784526F28683253957E048B0 /* themify.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		472FB4DEB2F80F28FEE814EF19EDC573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E30748A1FE9351FEA12AA683E9D861BA /* Pods_LGButton_Example.framework */,
+				185174DCF336949C789FFBDADFC32EF5 /* SmoothButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5722DC9AAD3F4A98C0ACD0614CC440BD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EB02588D6955047C8D3E0B85D5CADF3 /* SmoothButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5EB02588D6955047C8D3E0B85D5CADF3 /* SmoothButton */ = {
+			isa = PBXGroup;
+			children = (
+				F9C1B2D7646051516B9B5A3EE3CC166D /* SmoothButton.swift */,
+				938C8956A434AB75B5690D1EB0AEDFD6 /* Pod */,
+				442F542F9283B9651F80ACFC8005678B /* Resources */,
+				1317D197ABB84CF4803D96CD02FF78E8 /* Support Files */,
+				94728FD08FCB1724D3E29E34486F4C42 /* SwiftIconFont */,
+			);
+			name = SmoothButton;
 			path = ../..;
 			sourceTree = "<group>";
 		};
@@ -148,37 +196,37 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9A3B51E330B09DABF953CD709C764021 /* Development Pods */,
+				5722DC9AAD3F4A98C0ACD0614CC440BD /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F3E8193AD003A814785DEE4FCEC0CCF2 /* Products */,
+				472FB4DEB2F80F28FEE814EF19EDC573 /* Products */,
 				13A58A21898FA2D8E8FA72017B475DE3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		839615235E231E5FE1EDDC16061990B7 /* SwiftIconFont */ = {
+		938C8956A434AB75B5690D1EB0AEDFD6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4DED320CE468793386B41961CD681644 /* FontAwesome.swift */,
-				4E8D4A25C3BB0BA04D57081744878EC8 /* FontLoader.swift */,
-				195CF323A8E487831CEA3FE4B8349085 /* Iconic.swift */,
-				293EABEC57BB07F4C367D06196604BAA /* IonIcons.swift */,
-				808C6F23C11E86A1FCDF1B1957A3DCCA /* MapIcon.swift */,
-				C47475A01EB2C02955C49B9F06645E1C /* MaterialIcon.swift */,
-				DEEFD53D6D7718327A189DF7C4294E81 /* Octicon.swift */,
-				71642743B0A60B7FC94D05EA3D5F7CF4 /* SwiftIconFont.swift */,
-				EAAAFAEA69254A07EA85215C89E0EC9F /* SwiftIconLabel.swift */,
-				CE2BE8E3299FACA76670C543371D73C4 /* ThemifyIcon.swift */,
+				5A200DC22B7F743F5D87221FA340A494 /* SmoothButton.podspec */,
 			);
-			name = SwiftIconFont;
-			path = LGButton/Classes/SwiftIconFont;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		9A3B51E330B09DABF953CD709C764021 /* Development Pods */ = {
+		94728FD08FCB1724D3E29E34486F4C42 /* SwiftIconFont */ = {
 			isa = PBXGroup;
 			children = (
-				4F3953A3B24A24374144C1C5B7F86BF0 /* LGButton */,
+				5649CB12B10B0C4B8E3E80B4E2C8AC1B /* FontAwesome.swift */,
+				FBD546B370C69DC5F816E34348958CA7 /* FontLoader.swift */,
+				E9E4B6DB4E519F4387FBF1A5712F1E9D /* Iconic.swift */,
+				4DC90A41EB823791FABA92348EA092B0 /* IonIcons.swift */,
+				60D29D84F07DDE22A1FA5CF533C57217 /* MapIcon.swift */,
+				4CED6A51F47D08C7A937BF14E1311EBF /* MaterialIcon.swift */,
+				7209216CB2D5E5A4945E176666B50158 /* Octicon.swift */,
+				FA773BB1B33BE900D27F38A603EA1CF2 /* SwiftIconFont.swift */,
+				709CA0D01C4E78A1560E5A26AF2FA961 /* SwiftIconLabel.swift */,
+				BDF18838C8F08214A1AE0CB8375C4BD3 /* ThemifyIcon.swift */,
 			);
-			name = "Development Pods";
+			name = SwiftIconFont;
+			path = SmoothButton/Classes/SwiftIconFont;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -189,35 +237,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C8DBFA1F0EC5016D21E92F2F11863B83 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D603FBC8499F06867120C7FF16DC35FF /* Info.plist */,
-				8DA92659A97D35DBAD78B49C364D8841 /* LGButton.modulemap */,
-				02EDF022546D31304595FC764AA9EBAB /* LGButton.xcconfig */,
-				07B5A28AE1AB321C8DB11F31233C997F /* LGButton-dummy.m */,
-				66A97A9FC2E2FC13A62332924AC1B9A3 /* LGButton-prefix.pch */,
-				F141D433D5061DDBE056864765F8074A /* LGButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LGButton";
-			sourceTree = "<group>";
-		};
-		C9EA44F079D1B30C75603242A229A8A8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				70E9CD9D1FAD5A8D6E05361A54D47173 /* FontAwesome.ttf */,
-				4C3E14CA0E5062DF7326294A094552D6 /* Ionicons.ttf */,
-				CBC93E13272EFE886024A07D499B0036 /* LGButton.xib */,
-				C08802B113FD67EC18F134F83FD56CF7 /* map-icons.ttf */,
-				2AFFDCB71DAFDD5DC5204D7CF18E5CAC /* MaterialIcons-Regular.ttf */,
-				AC3F3C45E4EB3D7ABE0CB25A622B08A1 /* octicons.ttf */,
-				4CFE0981E747F5451D44457B69A95461 /* open-iconic.ttf */,
-				D855F5D626F14AF3B8D975216210DD85 /* themify.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,71 +245,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F3E8193AD003A814785DEE4FCEC0CCF2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				121146EFC3ADA2D6DDB75E7F492ED7EF /* LGButton.framework */,
-				58109B1421C9A7A37D20C75DA9B8CC32 /* Pods_LGButton_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0BD7D953909F48BDD67BB66A61AD7A55 /* Headers */ = {
+		34830C7CD2431A0D7A204989747A6ED5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4001DEBAD80025CFFADC02F608DE4663 /* Pods-LGButton_Example-umbrella.h in Headers */,
+				8360348CCD65B97485262C9A9DB983DE /* SmoothButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		247143850B409D083DAFDB21C52B443D /* Headers */ = {
+		601BF11901EB123E3B344CEE271F29C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AE204EAEB3B526F04157A32888A1B4 /* LGButton-umbrella.h in Headers */,
+				89171EA571B22E2C6006686854F20BFF /* Pods-LGButton_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7AF50A14321A54F7340BF87AB1CDE56D /* Pods-LGButton_Example */ = {
+		80E80B7A9D1EF46DE3D055343FA37FCC /* SmoothButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C31B9671FBABBDFCE8B71BECD476450 /* Build configuration list for PBXNativeTarget "Pods-LGButton_Example" */;
+			buildConfigurationList = DB512C40F9B914868B2FB355B5811F2D /* Build configuration list for PBXNativeTarget "SmoothButton" */;
 			buildPhases = (
-				C411EE4A7AA1DB4562C06B24693E8699 /* Sources */,
-				0B3265FFF4D9638330D2D680805F33E7 /* Frameworks */,
-				0BD7D953909F48BDD67BB66A61AD7A55 /* Headers */,
+				FAA807A908F6648C8C10BDF6DEBDFF7F /* Sources */,
+				1FF1E767F04675C8196ABE41763272EE /* Frameworks */,
+				7DAA91F16AAFC6D5E17C8F217ACB6E4E /* Resources */,
+				34830C7CD2431A0D7A204989747A6ED5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				751B19D66E490D5D246D6E19D63E5243 /* PBXTargetDependency */,
+			);
+			name = SmoothButton;
+			productName = SmoothButton;
+			productReference = 185174DCF336949C789FFBDADFC32EF5 /* SmoothButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B27438BC5B88F4C0CB49CAEF7F2CE8B0 /* Pods-LGButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D327EEAA4F3C4E3CE6CE6F81E4E1BB0 /* Build configuration list for PBXNativeTarget "Pods-LGButton_Example" */;
+			buildPhases = (
+				24BDB255FDDE0312F471423C87BCFFEC /* Sources */,
+				8944EB5084DEEDC3A45B7BFB161AEC78 /* Frameworks */,
+				601BF11901EB123E3B344CEE271F29C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				452041F37F5BCAFFA2C2FBFC5D34CC86 /* PBXTargetDependency */,
 			);
 			name = "Pods-LGButton_Example";
 			productName = "Pods-LGButton_Example";
-			productReference = 58109B1421C9A7A37D20C75DA9B8CC32 /* Pods_LGButton_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DCB2B03C26F284864226302AFAEC546C /* LGButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8766A2CF71289D1BC5742D017FE27963 /* Build configuration list for PBXNativeTarget "LGButton" */;
-			buildPhases = (
-				D9A21D1831ACC5030744EB03A106AF18 /* Sources */,
-				33D308CE8EF1EF37F920ECFAA9279D29 /* Frameworks */,
-				29427A1232A884F6E41E11932C2868E7 /* Resources */,
-				247143850B409D083DAFDB21C52B443D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LGButton;
-			productName = LGButton;
-			productReference = 121146EFC3ADA2D6DDB75E7F492ED7EF /* LGButton.framework */;
+			productReference = E30748A1FE9351FEA12AA683E9D861BA /* Pods_LGButton_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -299,8 +309,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -310,143 +320,75 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F3E8193AD003A814785DEE4FCEC0CCF2 /* Products */;
+			productRefGroup = 472FB4DEB2F80F28FEE814EF19EDC573 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCB2B03C26F284864226302AFAEC546C /* LGButton */,
-				7AF50A14321A54F7340BF87AB1CDE56D /* Pods-LGButton_Example */,
+				B27438BC5B88F4C0CB49CAEF7F2CE8B0 /* Pods-LGButton_Example */,
+				80E80B7A9D1EF46DE3D055343FA37FCC /* SmoothButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		29427A1232A884F6E41E11932C2868E7 /* Resources */ = {
+		7DAA91F16AAFC6D5E17C8F217ACB6E4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961B556D81601BD99546C99765C47FD3 /* FontAwesome.ttf in Resources */,
-				1EA43895FFFA8B57AE7DA63863BC50B0 /* Ionicons.ttf in Resources */,
-				9017EB99C6AF6C8CECD651DF68A1576A /* LGButton.xib in Resources */,
-				02E376A3BB1FBA1BCD8E98C70C180AED /* map-icons.ttf in Resources */,
-				5159D59724BDD166CCB121F1689345C8 /* MaterialIcons-Regular.ttf in Resources */,
-				E81B107B06C1AC312AA7636B1E1301DE /* octicons.ttf in Resources */,
-				7C09D74788B3D10DCF42597D80E14252 /* open-iconic.ttf in Resources */,
-				AF198558F21676A1C2320D98AEA9FC52 /* themify.ttf in Resources */,
+				6CE94436C4F5C37506E993D6E9DDAAE2 /* FontAwesome.ttf in Resources */,
+				67C71405A9ACDC38DBE5525C3CC77B34 /* Ionicons.ttf in Resources */,
+				E866C5ACF71A1CDA433AD1C9BA54603B /* map-icons.ttf in Resources */,
+				6C5512F13F02B747FA78B48CBB8942B2 /* MaterialIcons-Regular.ttf in Resources */,
+				E883412A55129508B8D64C51E9A7941D /* octicons.ttf in Resources */,
+				FFBEF27D7B833222863C166AFD338367 /* open-iconic.ttf in Resources */,
+				D511068FAFFB6293291DB4BBD75B9145 /* SmoothButton.xib in Resources */,
+				433E179584B0EA3BF7AC464E3D0B09DC /* themify.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C411EE4A7AA1DB4562C06B24693E8699 /* Sources */ = {
+		24BDB255FDDE0312F471423C87BCFFEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBE4FF135F6B225918CDF1183366FCC /* Pods-LGButton_Example-dummy.m in Sources */,
+				B2EE87BC4BFE1CE590B185F387D55D6D /* Pods-LGButton_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9A21D1831ACC5030744EB03A106AF18 /* Sources */ = {
+		FAA807A908F6648C8C10BDF6DEBDFF7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A25E453199C12C4FA9301DF2D389ED7 /* FontAwesome.swift in Sources */,
-				E5F63C7D3706848E119DBDDBB68F2558 /* FontLoader.swift in Sources */,
-				E6F97DD0F1D6B01260C575B507E45A15 /* Iconic.swift in Sources */,
-				B5C3F5FF48CE89026E790D0E1CBB9C38 /* IonIcons.swift in Sources */,
-				C587927E25053282F18B343438BEBCCC /* LGButton-dummy.m in Sources */,
-				133C2817BB2989540DBD3B5532CDA8C3 /* LGButton.swift in Sources */,
-				63942684986A6021EBA8ABC92D1BED5A /* MapIcon.swift in Sources */,
-				B85E3C54B4A1AD46BCEAB18A455C5F67 /* MaterialIcon.swift in Sources */,
-				39EE9FFD385AD53400B26BB45B63E61C /* Octicon.swift in Sources */,
-				A3F98EB4A538FB4BEAC032AD07A6E758 /* SwiftIconFont.swift in Sources */,
-				A326FA53681BD593E5B23B000EDF91EA /* SwiftIconLabel.swift in Sources */,
-				0111B59DCCC9EAACB92593A022F3838B /* ThemifyIcon.swift in Sources */,
+				3A0657416E489DD89B83DE71718A8159 /* FontAwesome.swift in Sources */,
+				15C1A661FB2D775B2A52C8D347F7EF86 /* FontLoader.swift in Sources */,
+				4204A36FA222CC8021CD9360E3E6F7A7 /* Iconic.swift in Sources */,
+				0435520C6749C474F215E59186FD840F /* IonIcons.swift in Sources */,
+				4C97833C22E4EDFA1FD0F67300853831 /* MapIcon.swift in Sources */,
+				4C5450786C93936EDB5FFA3913B28C00 /* MaterialIcon.swift in Sources */,
+				72C419D0FA56428F64277778AFC7784D /* Octicon.swift in Sources */,
+				9126904FD0E1EDD922EFEF0DF2E366C1 /* SmoothButton-dummy.m in Sources */,
+				A9E4B53A31632581A7876D29C7F10403 /* SmoothButton.swift in Sources */,
+				1A3632246A17EE4A81414A9346DD6695 /* SwiftIconFont.swift in Sources */,
+				70C9C23A7F0B6D71AEB801B29AA4BD41 /* SwiftIconLabel.swift in Sources */,
+				C4949458E9D2EB1F9DF1E29414535665 /* ThemifyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		751B19D66E490D5D246D6E19D63E5243 /* PBXTargetDependency */ = {
+		452041F37F5BCAFFA2C2FBFC5D34CC86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LGButton;
-			target = DCB2B03C26F284864226302AFAEC546C /* LGButton */;
-			targetProxy = F1CE4507C9F8B1C7DE59AACEEBEF4692 /* PBXContainerItemProxy */;
+			name = SmoothButton;
+			target = 80E80B7A9D1EF46DE3D055343FA37FCC /* SmoothButton */;
+			targetProxy = A0BC4FDB988BB70652F762632A1A51E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		129CF8C79810E712D58ED6EB7F812B01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E338AF219D9DAEB4F16039D2D71BDE3E /* Pods-LGButton_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGButton_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LGButton_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4390F563A0FEA4BB6F646A7B866CC05A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59B5D472E9025E1F0B6CA7D43899F55E /* Pods-LGButton_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LGButton_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LGButton_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -456,10 +398,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -467,6 +411,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -475,61 +420,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -554,16 +445,15 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BC20DDD92E2881F76758C25CE5AA5AFB /* Debug */ = {
+		26F443B223886A05B329B986D65E110C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02EDF022546D31304595FC764AA9EBAB /* LGButton.xcconfig */;
+			baseConfigurationReference = 4879D6A4E681419B7A5B1FD330967A01 /* SmoothButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -574,13 +464,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGButton/LGButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SmoothButton/SmoothButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmoothButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LGButton/LGButton.modulemap";
-				PRODUCT_NAME = LGButton;
+				MODULEMAP_FILE = "Target Support Files/SmoothButton/SmoothButton.modulemap";
+				PRODUCT_MODULE_NAME = SmoothButton;
+				PRODUCT_NAME = SmoothButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -592,9 +483,44 @@
 			};
 			name = Debug;
 		};
-		F7B43CB0677C15F0DFBBBE96A358EDB7 /* Release */ = {
+		486DFBAF7D9E1A1EB69CE57AE1B1AD93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02EDF022546D31304595FC764AA9EBAB /* LGButton.xcconfig */;
+			baseConfigurationReference = 286E707C8F400C7D677D143B253506AE /* Pods-LGButton_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3A665E065B3377D8F7DFADEA1BFD4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4879D6A4E681419B7A5B1FD330967A01 /* SmoothButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -605,13 +531,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGButton/LGButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SmoothButton/SmoothButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmoothButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LGButton/LGButton.modulemap";
-				PRODUCT_NAME = LGButton;
+				MODULEMAP_FILE = "Target Support Files/SmoothButton/SmoothButton.modulemap";
+				PRODUCT_MODULE_NAME = SmoothButton;
+				PRODUCT_NAME = SmoothButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -624,32 +551,125 @@
 			};
 			name = Release;
 		};
+		FD5B0D3B02771779D73BE5B31F92E7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DC8D1A1B544307522E31F2ABF3A3AD /* Pods-LGButton_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LGButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LGButton_Example/Pods-LGButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C31B9671FBABBDFCE8B71BECD476450 /* Build configuration list for PBXNativeTarget "Pods-LGButton_Example" */ = {
+		5D327EEAA4F3C4E3CE6CE6F81E4E1BB0 /* Build configuration list for PBXNativeTarget "Pods-LGButton_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4390F563A0FEA4BB6F646A7B866CC05A /* Debug */,
-				129CF8C79810E712D58ED6EB7F812B01 /* Release */,
+				FD5B0D3B02771779D73BE5B31F92E7F9 /* Debug */,
+				486DFBAF7D9E1A1EB69CE57AE1B1AD93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8766A2CF71289D1BC5742D017FE27963 /* Build configuration list for PBXNativeTarget "LGButton" */ = {
+		DB512C40F9B914868B2FB355B5811F2D /* Build configuration list for PBXNativeTarget "SmoothButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC20DDD92E2881F76758C25CE5AA5AFB /* Debug */,
-				F7B43CB0677C15F0DFBBBE96A358EDB7 /* Release */,
+				26F443B223886A05B329B986D65E110C /* Debug */,
+				B3A665E065B3377D8F7DFADEA1BFD4CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 //
-//  LGButton.h
-//  LGButton
+//  SmoothButton.h
+//  SmoothButton
 //
 //  Created by Lorenzo Greco on 28/05/2017.
 //  Copyright © 2017 Lorenzo Greco. All rights reserved.
@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for LGButton.
-FOUNDATION_EXPORT double LGButtonVersionNumber;
+FOUNDATION_EXPORT double SmoothButtonVersionNumber;
 
-//! Project version string for LGButton.
-FOUNDATION_EXPORT const unsigned char LGButtonVersionString[];
+]FOUNDATION_EXPORT const unsigned char SmoothButtonVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LGButton/PublicHeader.h>
 
